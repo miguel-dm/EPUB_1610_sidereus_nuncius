@@ -1,0 +1,62 @@
+nav#landmarks {
+    display:none;
+}
+
+nav#page-list {
+    display:none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+section,
+section > section,
+.break{
+	page-break-after: always;
+}
+
+/* locais */
+section{
+    margin:auto;
+	max-width:62ch;
+	line-height:1.5em;
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 52ch;
+}
+table{
+    line-height: 1.5em;
+    border-spacing: 0 1.5em;
+    
+}
+td:first-child{
+    font-weight: bold;
+    min-width: 7em;
+    vertical-align: top;
+}
+.center-text{
+    text-align: center;
+}
+.right-text{
+    text-align: right;
+}
+.biblioAuthor{
+    font-variant: small-caps;
+}
+.bold{
+    font-weight: bold; 
+}
+
+@media all and (prefers-color-scheme: dark){
+    [id^="illustration"]{
+        border: 1px solid red;
+		filter: invert(100%);
+    }
+}
